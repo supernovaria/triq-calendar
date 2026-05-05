@@ -7,7 +7,6 @@ import hashlib
 
 URL = "https://www.transinterqueer.org/angebote/veranstaltungen/"
 
-# German → English month mapping (for parsing)
 GERMAN_MONTHS = {
     "Januar": "January",
     "Februar": "February",
@@ -24,15 +23,10 @@ GERMAN_MONTHS = {
 }
 
 def normalize_date(date_str):
-    """
-    Convert German date string like:
-    'Mittwoch, 06 Mai 2026'
-    → datetime.date
-    """
     for de, en in GERMAN_MONTHS.items():
         date_str = date_str.replace(de, en)
 
-    # Remove weekday
+    # remove weekday (e.g. "Mittwoch,")
     parts = date_str.split(",", 1)
     if len(parts) == 2:
         date_str = parts[1].strip()
@@ -41,7 +35,7 @@ def normalize_date(date_str):
 
 
 def extract_events():
-    res = requests.get(URL, timeout=10)
+    res = requests.get(URL, timeout=15)
     res.raise_for_status()
 
     soup = BeautifulSoup(res.text, "html.parser")
@@ -49,35 +43,35 @@ def extract_events():
     events = []
     current_date = None
 
-    # The page uses headings + lists, so we iterate in order
-    for el in soup.find_all(["h2", "h3", "p", "ul", "li"]):
+    # go through all visible text blocks in order
+    elements = soup.find_all(["h2", "h3", "h4", "p", "li"])
 
+    for el in elements:
         text = el.get_text(" ", strip=True)
 
-        # Detect date lines (contain year + month)
-        if re.search(r"\d{4}", text) and any(m in text for m in GERMAN_MONTHS):
+        # match date like "Mittwoch, 06 Mai 2026"
+        date_match = re.search(r"\b\w+,\s+\d{1,2}\s+\w+\s+\d{4}\b", text)
+        if date_match:
             try:
-                current_date = normalize_date(text)
+                current_date = normalize_date(date_match.group())
             except Exception:
-                continue
+                current_date = None
+            continue
 
-        # Extract list items as events
-        if el.name == "li" and current_date:
-            line = text
+        if not current_date:
+            continue
 
-            # Match time at start (e.g. "19:00 Event name")
-            match = re.match(r"(\d{1,2}:\d{2})\s+(.*)", line)
-            if not match:
-                continue
-
+        # match event line like "19:00 Event Name"
+        match = re.match(r"^(\d{1,2}:\d{2})\s+(.*)", text)
+        if match:
             time_str, title = match.groups()
 
             try:
-                dt = datetime.strptime(time_str, "%H:%M").time()
+                time_obj = datetime.strptime(time_str, "%H:%M").time()
             except ValueError:
                 continue
 
-            start_dt = datetime.combine(current_date, dt)
+            start_dt = datetime.combine(current_date, time_obj)
 
             events.append({
                 "title": title.strip(),
@@ -88,9 +82,6 @@ def extract_events():
 
 
 def generate_uid(title, start_dt):
-    """
-    Stable UID based on content
-    """
     base = f"{title}-{start_dt.isoformat()}"
     return hashlib.md5(base.encode()).hexdigest()
 
@@ -102,13 +93,10 @@ def build_calendar(events):
         e = Event()
         e.name = ev["title"]
         e.begin = ev["start"]
-        e.duration = timedelta(hours=2)  # default duration
-
-        # Stable UID (important!)
+        e.duration = timedelta(hours=2)
         e.uid = generate_uid(ev["title"], ev["start"])
-
-        e.description = "Source: transinterqueer.org"
         e.location = "TransInterQueer e.V., Berlin"
+        e.description = "Source: transinterqueer.org"
 
         cal.events.add(e)
 
@@ -117,12 +105,19 @@ def build_calendar(events):
 
 
 def main():
-    events = extract_events()
+    try:
+        events = extract_events()
+        print(f"Found {len(events)} events")
 
-    print(f"Found {len(events)} events")
+        if not events:
+            raise ValueError("No events found — parsing likely failed")
 
-    build_calendar(events)
-    print("events.ics updated")
+        build_calendar(events)
+        print("events.ics updated")
+
+    except Exception as e:
+        print("ERROR:", e)
+        raise
 
 
 if __name__ == "__main__":
