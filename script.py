@@ -1,37 +1,37 @@
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from ics import Calendar, Event
 import re
 import hashlib
+import unicodedata
+from collections import defaultdict
 
-URL = "https://www.transinterqueer.org/angebote/veranstaltungen/"
+BERLIN = ZoneInfo("Europe/Berlin")
 
-GERMAN_MONTHS = {
-    "Januar": "January",
-    "Februar": "February",
-    "März": "March",
-    "April": "April",
-    "Mai": "May",
-    "Juni": "June",
-    "Juli": "July",
-    "August": "August",
-    "September": "September",
-    "Oktober": "October",
-    "November": "November",
-    "Dezember": "December"
-}
+URL = "https://www.transinterqueer.org/en/offers-and-projects/events-2/"
 
-def normalize_date(date_str):
-    for de, en in GERMAN_MONTHS.items():
-        date_str = date_str.replace(de, en)
 
-    # remove weekday (e.g. "Mittwoch,")
-    parts = date_str.split(",", 1)
-    if len(parts) == 2:
-        date_str = parts[1].strip()
+def parse_date(line):
+    try:
+        parts = line.split(",", 1)
+        if len(parts) == 2:
+            return datetime.strptime(parts[1].strip(), "%d %B %Y").date()
+    except ValueError:
+        pass
+    return None
 
-    return datetime.strptime(date_str, "%d %B %Y").date()
+
+def is_time_only(line):
+    return bool(re.match(r"^\d{1,2}:\d{2}$", line.strip()))
+
+
+def slugify(title):
+    title = unicodedata.normalize("NFKD", title)
+    title = title.encode("ascii", "ignore").decode("ascii")
+    title = re.sub(r"[^\w]+", "_", title)
+    return title.strip("_")
 
 
 def extract_events():
@@ -39,45 +39,36 @@ def extract_events():
     res.raise_for_status()
 
     soup = BeautifulSoup(res.text, "html.parser")
-
-    text_blocks = soup.get_text("\n", strip=True).split("\n")
+    lines = [l for l in soup.get_text("\n", strip=True).split("\n") if l.strip()]
 
     events = []
     current_date = None
+    pending_time = None
 
-    date_regex = re.compile(r"\b\w+,\s+\d{1,2}\s+\w+\s+\d{4}\b")
-    event_regex = re.compile(r"^(\d{1,2}:\d{2})\s+(.*)")
-
-    for line in text_blocks:
+    for line in lines:
         line = line.strip()
 
-        # detect date line
-        if date_regex.search(line):
-            try:
-                current_date = normalize_date(date_regex.search(line).group())
-            except Exception:
-                current_date = None
+        date = parse_date(line)
+        if date:
+            current_date = date
+            pending_time = None
             continue
 
         if not current_date:
             continue
 
-        # detect event line
-        match = event_regex.match(line)
-        if match:
-            time_str, title = match.groups()
+        if is_time_only(line):
+            pending_time = line
+            continue
 
+        if pending_time:
             try:
-                time_obj = datetime.strptime(time_str, "%H:%M").time()
+                time_obj = datetime.strptime(pending_time, "%H:%M").time()
+                start_dt = datetime.combine(current_date, time_obj).replace(tzinfo=BERLIN)
+                events.append({"title": line, "start": start_dt})
             except ValueError:
-                continue
-
-            start_dt = datetime.combine(current_date, time_obj)
-
-            events.append({
-                "title": title.strip(),
-                "start": start_dt
-            })
+                pass
+            pending_time = None
 
     return events
 
@@ -87,38 +78,47 @@ def generate_uid(title, start_dt):
     return hashlib.md5(base.encode()).hexdigest()
 
 
-def build_calendar(events):
+def make_ics_event(ev):
+    e = Event()
+    e.name = ev["title"]
+    e.begin = ev["start"]
+    e.duration = timedelta(hours=2)
+    e.uid = generate_uid(ev["title"], ev["start"])
+    e.location = "TransInterQueer e.V., Berlin"
+    e.description = "Source: transinterqueer.org"
+    return e
+
+
+def write_calendar(events, path):
     cal = Calendar()
-
     for ev in events:
-        e = Event()
-        e.name = ev["title"]
-        e.begin = ev["start"]
-        e.duration = timedelta(hours=2)
-        e.uid = generate_uid(ev["title"], ev["start"])
-        e.location = "TransInterQueer e.V., Berlin"
-        e.description = "Source: transinterqueer.org"
-
-        cal.events.add(e)
-
-    with open("events.ics", "w", encoding="utf-8") as f:
+        cal.events.add(make_ics_event(ev))
+    with open(path, "w", encoding="utf-8") as f:
         f.writelines(cal)
 
 
 def main():
-    try:
-        events = extract_events()
-        print(f"Found {len(events)} events")
+    events = extract_events()
+    print(f"Found {len(events)} events")
+    if not events:
+        raise ValueError("No events found — parsing likely failed")
 
-        if not events:
-            raise ValueError("No events found — parsing likely failed")
+    write_calendar(events, "triq_all_events.ics")
+    print("Written: triq_all_events.ics")
 
-        build_calendar(events)
-        print("events.ics updated")
+    # Group by normalized title; any title appearing 2+ times gets its own file
+    series_map = defaultdict(lambda: {"title": None, "events": []})
+    for ev in events:
+        key = ev["title"].lower().strip()
+        if series_map[key]["title"] is None:
+            series_map[key]["title"] = ev["title"]
+        series_map[key]["events"].append(ev)
 
-    except Exception as e:
-        print("ERROR:", e)
-        raise
+    for data in series_map.values():
+        if len(data["events"]) >= 2:
+            filename = f"triq_{slugify(data['title'])}.ics"
+            write_calendar(data["events"], filename)
+            print(f"Written: {filename}")
 
 
 if __name__ == "__main__":
