@@ -35,7 +35,7 @@ jobs:
           git config user.email "github-actions@users.noreply.github.com"
 
           git rm events.ics 2>/dev/null || true
-          git add triq_*.ics
+          git add triq_*.ics index.html
 
           if git diff --cached --quiet; then
             echo "No changes to commit"
