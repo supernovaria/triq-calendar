@@ -70,18 +70,11 @@
       user-select: none;
       padding: 0.35rem 0;
     }
-    .instructions { margin-top: 1.25rem; }
-    .instructions h3 {
-      font-size: 1rem;
-      margin: 1.5rem 0 0.35rem;
-    }
-    .instructions h3:first-child { margin-top: 0; }
-    .instructions ol {
-      margin: 0;
-      padding-left: 1.25rem;
-    }
-    .instructions p {
-      margin: 0.5rem 0 0;
+    .instructions {
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
     }
     footer {
       margin-top: 4rem;
@@ -100,7 +93,7 @@
       <span class="links">
         <button class="copy-btn" onclick="copyLink(this, 'https://supernovaria.github.io/triq-calendar/triq_all_events.ics')">Copy link</button>
         <a href="https://supernovaria.github.io/triq-calendar/triq_all_events.ics" class="ics-link">.ics</a>
-        <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_all_events.ics" target="_blank" rel="noopener">Google</a>
+        <a href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_all_events.ics" target="_blank" rel="noopener">Google</a>
         <a href="webcal://supernovaria.github.io/triq-calendar/triq_all_events.ics">Apple</a>
         <a href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_all_events.ics" target="_blank" rel="noopener">Outlook</a>
       </span>
@@ -110,7 +103,7 @@
       <span class="links">
         <button class="copy-btn" onclick="copyLink(this, 'https://supernovaria.github.io/triq-calendar/triq_Schreibzeit_ein_offener_Schreibtreff.ics')">Copy link</button>
         <a href="https://supernovaria.github.io/triq-calendar/triq_Schreibzeit_ein_offener_Schreibtreff.ics" class="ics-link">.ics</a>
-        <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_Schreibzeit_ein_offener_Schreibtreff.ics" target="_blank" rel="noopener">Google</a>
+        <a href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_Schreibzeit_ein_offener_Schreibtreff.ics" target="_blank" rel="noopener">Google</a>
         <a href="webcal://supernovaria.github.io/triq-calendar/triq_Schreibzeit_ein_offener_Schreibtreff.ics">Apple</a>
         <a href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_Schreibzeit_ein_offener_Schreibtreff.ics" target="_blank" rel="noopener">Outlook</a>
       </span>
@@ -120,7 +113,7 @@
       <span class="links">
         <button class="copy-btn" onclick="copyLink(this, 'https://supernovaria.github.io/triq-calendar/triq_StrIQ_Treff.ics')">Copy link</button>
         <a href="https://supernovaria.github.io/triq-calendar/triq_StrIQ_Treff.ics" class="ics-link">.ics</a>
-        <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_StrIQ_Treff.ics" target="_blank" rel="noopener">Google</a>
+        <a href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_StrIQ_Treff.ics" target="_blank" rel="noopener">Google</a>
         <a href="webcal://supernovaria.github.io/triq-calendar/triq_StrIQ_Treff.ics">Apple</a>
         <a href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_StrIQ_Treff.ics" target="_blank" rel="noopener">Outlook</a>
       </span>
@@ -130,7 +123,7 @@
       <span class="links">
         <button class="copy-btn" onclick="copyLink(this, 'https://supernovaria.github.io/triq-calendar/triq_TIN_Read.ics')">Copy link</button>
         <a href="https://supernovaria.github.io/triq-calendar/triq_TIN_Read.ics" class="ics-link">.ics</a>
-        <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_TIN_Read.ics" target="_blank" rel="noopener">Google</a>
+        <a href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_TIN_Read.ics" target="_blank" rel="noopener">Google</a>
         <a href="webcal://supernovaria.github.io/triq-calendar/triq_TIN_Read.ics">Apple</a>
         <a href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_TIN_Read.ics" target="_blank" rel="noopener">Outlook</a>
       </span>
@@ -140,7 +133,7 @@
       <span class="links">
         <button class="copy-btn" onclick="copyLink(this, 'https://supernovaria.github.io/triq-calendar/triq_Trans_Femme_Gruppe.ics')">Copy link</button>
         <a href="https://supernovaria.github.io/triq-calendar/triq_Trans_Femme_Gruppe.ics" class="ics-link">.ics</a>
-        <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_Trans_Femme_Gruppe.ics" target="_blank" rel="noopener">Google</a>
+        <a href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_Trans_Femme_Gruppe.ics" target="_blank" rel="noopener">Google</a>
         <a href="webcal://supernovaria.github.io/triq-calendar/triq_Trans_Femme_Gruppe.ics">Apple</a>
         <a href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_Trans_Femme_Gruppe.ics" target="_blank" rel="noopener">Outlook</a>
       </span>
@@ -150,7 +143,7 @@
       <span class="links">
         <button class="copy-btn" onclick="copyLink(this, 'https://supernovaria.github.io/triq-calendar/triq_TrIQ_Bibliothek_hat_geoffnet.ics')">Copy link</button>
         <a href="https://supernovaria.github.io/triq-calendar/triq_TrIQ_Bibliothek_hat_geoffnet.ics" class="ics-link">.ics</a>
-        <a href="https://calendar.google.com/calendar/r/settings/addbyurl?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_TrIQ_Bibliothek_hat_geoffnet.ics" target="_blank" rel="noopener">Google</a>
+        <a href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_TrIQ_Bibliothek_hat_geoffnet.ics" target="_blank" rel="noopener">Google</a>
         <a href="webcal://supernovaria.github.io/triq-calendar/triq_TrIQ_Bibliothek_hat_geoffnet.ics">Apple</a>
         <a href="https://outlook.live.com/calendar/0/addfromweb?url=https%3A%2F%2Fsupernovaria.github.io%2Ftriq-calendar%2Ftriq_TrIQ_Bibliothek_hat_geoffnet.ics" target="_blank" rel="noopener">Outlook</a>
       </span>
@@ -160,22 +153,9 @@
   <details>
     <summary>How to subscribe</summary>
     <div class="instructions">
-      <h3>Google, Apple &amp; Outlook</h3>
-      <ol>
-        <li>Click the <strong>Google</strong>, <strong>Apple</strong>, or <strong>Outlook</strong> button next to the calendar you want.</li>
-        <li>Your browser opens the respective service with the calendar pre-filled. Confirm when prompted — the button is usually labelled <em>Add calendar</em>, <em>Subscribe</em>, or <em>Import</em>.</li>
-      </ol>
-      <p>Note: the <strong>Apple</strong> button uses a <code>webcal://</code> link, which opens directly in Apple Calendar or any other app registered to handle it.</p>
-
-      <h3>Proton Calendar</h3>
-      <ol>
-        <li>Click <strong>Copy link</strong> next to the calendar you want — this copies the calendar URL to your clipboard.</li>
-        <li>Open Proton Calendar and go to <em>Settings → Calendars</em>.</li>
-        <li>Click <em>Add calendar → Subscribe to calendar</em> and paste the copied link.</li>
-      </ol>
-
-      <h3>Other apps</h3>
-      <p>Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature. Any calendar app that supports iCal subscriptions will work.</p>
+      <p><strong>Google, Apple &amp; Outlook</strong> — Click the respective button next to the calendar you want. Your browser opens the service with the calendar pre-filled; confirm when prompted (<em>Add calendar</em>, <em>Subscribe</em>, or <em>Import</em>). The Apple button uses a <code>webcal://</code> link that opens directly in Apple Calendar.</p>
+      <p><strong>Proton Calendar</strong> — Click <strong>Copy link</strong>, then in Proton Calendar go to Settings → Calendars → Add calendar → Subscribe to calendar and paste the link.</p>
+      <p><strong>Other apps</strong> — Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature.</p>
     </div>
   </details>
 

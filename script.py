@@ -102,8 +102,9 @@ def write_calendar(events, path):
 
 def calendar_row(display_name, filename, bold=False):
     ics_url = f"{BASE_URL}/{filename}"
-    google = f"https://calendar.google.com/calendar/r/settings/addbyurl?url={quote(ics_url, safe='')}"
-    apple = ics_url.replace("https://", "webcal://")
+    webcal_url = ics_url.replace("https://", "webcal://")
+    google = f"https://calendar.google.com/calendar/render?cid={quote(webcal_url, safe='')}"
+    apple = webcal_url
     outlook = f"https://outlook.live.com/calendar/0/addfromweb?url={quote(ics_url, safe='')}"
     name_class = "cal-name bold" if bold else "cal-name"
     return f"""    <li>
@@ -196,18 +197,11 @@ def generate_index(series_entries):
       user-select: none;
       padding: 0.35rem 0;
     }}
-    .instructions {{ margin-top: 1.25rem; }}
-    .instructions h3 {{
-      font-size: 1rem;
-      margin: 1.5rem 0 0.35rem;
-    }}
-    .instructions h3:first-child {{ margin-top: 0; }}
-    .instructions ol {{
-      margin: 0;
-      padding-left: 1.25rem;
-    }}
-    .instructions p {{
-      margin: 0.5rem 0 0;
+    .instructions {{
+      margin-top: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
     }}
     footer {{
       margin-top: 4rem;
@@ -226,22 +220,9 @@ def generate_index(series_entries):
   <details>
     <summary>How to subscribe</summary>
     <div class="instructions">
-      <h3>Google, Apple &amp; Outlook</h3>
-      <ol>
-        <li>Click the <strong>Google</strong>, <strong>Apple</strong>, or <strong>Outlook</strong> button next to the calendar you want.</li>
-        <li>Your browser opens the respective service with the calendar pre-filled. Confirm when prompted — the button is usually labelled <em>Add calendar</em>, <em>Subscribe</em>, or <em>Import</em>.</li>
-      </ol>
-      <p>Note: the <strong>Apple</strong> button uses a <code>webcal://</code> link, which opens directly in Apple Calendar or any other app registered to handle it.</p>
-
-      <h3>Proton Calendar</h3>
-      <ol>
-        <li>Click <strong>Copy link</strong> next to the calendar you want — this copies the calendar URL to your clipboard.</li>
-        <li>Open Proton Calendar and go to <em>Settings → Calendars</em>.</li>
-        <li>Click <em>Add calendar → Subscribe to calendar</em> and paste the copied link.</li>
-      </ol>
-
-      <h3>Other apps</h3>
-      <p>Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature. Any calendar app that supports iCal subscriptions will work.</p>
+      <p><strong>Google, Apple &amp; Outlook</strong> — Click the respective button next to the calendar you want. Your browser opens the service with the calendar pre-filled; confirm when prompted (<em>Add calendar</em>, <em>Subscribe</em>, or <em>Import</em>). The Apple button uses a <code>webcal://</code> link that opens directly in Apple Calendar.</p>
+      <p><strong>Proton Calendar</strong> — Click <strong>Copy link</strong>, then in Proton Calendar go to Settings → Calendars → Add calendar → Subscribe to calendar and paste the link.</p>
+      <p><strong>Other apps</strong> — Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature.</p>
     </div>
   </details>
 
