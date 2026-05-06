@@ -222,7 +222,8 @@ def generate_index(series_entries):
   <details>
     <summary>How to subscribe</summary>
     <div class="instructions">
-      <p><strong>Google, Apple &amp; Outlook</strong> — Click the respective button next to the calendar you want. Your browser opens the service with the calendar pre-filled; confirm when prompted (<em>Add calendar</em>, <em>Subscribe</em>, or <em>Import</em>). The Apple button uses a <code>webcal://</code> link that opens directly in Apple Calendar.</p>
+      <p><strong>Google</strong> — Click the Google button and confirm when prompted. Google will name the calendar after its URL; to rename it, click the three dots next to it in the sidebar → Settings → Name.</p>
+      <p><strong>Apple &amp; Outlook</strong> — Click the respective button; your browser opens the service with the calendar pre-filled. Confirm when prompted.</p>
       <p><strong>Proton Calendar</strong> — Click <strong>Copy link</strong>, then in Proton Calendar go to Settings → Calendars → Add calendar → Subscribe to calendar and paste the link.</p>
       <p><strong>Other apps</strong> — Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature.</p>
     </div>
