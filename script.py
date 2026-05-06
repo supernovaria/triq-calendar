@@ -100,26 +100,27 @@ def write_calendar(events, path):
         f.writelines(cal)
 
 
-def calendar_row(display_name, filename):
+def calendar_row(display_name, filename, bold=False):
     ics_url = f"{BASE_URL}/{filename}"
     google = f"https://calendar.google.com/calendar/r/settings/addbyurl?url={quote(ics_url, safe='')}"
     apple = ics_url.replace("https://", "webcal://")
     outlook = f"https://outlook.live.com/calendar/0/addfromweb?url={quote(ics_url, safe='')}"
+    name_class = "cal-name bold" if bold else "cal-name"
     return f"""    <li>
-      <span class="cal-name">{display_name}</span>
+      <span class="{name_class}">{display_name}</span>
       <span class="links">
+        <button class="copy-btn" onclick="copyLink(this, '{ics_url}')">Copy link</button>
+        <a href="{ics_url}" class="ics-link">.ics</a>
         <a href="{google}" target="_blank" rel="noopener">Google</a>
         <a href="{apple}">Apple</a>
         <a href="{outlook}" target="_blank" rel="noopener">Outlook</a>
-        <button class="copy-btn" onclick="copyLink(this, '{ics_url}')">Copy link</button>
-        <a href="{ics_url}" class="ics-link">.ics</a>
       </span>
     </li>
 """
 
 
 def generate_index(series_entries):
-    rows = calendar_row("All Events", "triq_all_events.ics")
+    rows = calendar_row("All Events", "triq_all_events.ics", bold=True)
     for entry in sorted(series_entries, key=lambda e: e["display_name"].lower()):
         rows += calendar_row(entry["display_name"], entry["filename"])
 
@@ -132,36 +133,34 @@ def generate_index(series_entries):
   <style>
     body {{
       font-family: system-ui, -apple-system, sans-serif;
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
+      max-width: 740px;
+      margin: 3.5rem auto;
+      padding: 0 2rem;
       color: #222;
       line-height: 1.6;
     }}
     h1 {{
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
     }}
     h1 a {{ color: inherit; }}
     ul {{
       list-style: none;
       padding: 0;
-      margin: 0 0 2rem 0;
+      margin: 0 0 2.5rem 0;
     }}
     li {{
-      display: flex;
-      align-items: baseline;
-      gap: 0.75rem;
-      padding: 0.5rem 0;
+      display: grid;
+      grid-template-columns: 17rem 1fr;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.85rem 0;
       border-bottom: 1px solid #eee;
-      flex-wrap: wrap;
     }}
     li:first-child {{ border-top: 1px solid #eee; }}
-    .cal-name {{
-      font-weight: 500;
-      min-width: 12rem;
-    }}
+    .cal-name {{ font-weight: 400; }}
+    .cal-name.bold {{ font-weight: 600; }}
     .links {{
       display: flex;
       gap: 0.4rem;
@@ -169,44 +168,53 @@ def generate_index(series_entries):
       align-items: center;
     }}
     .links a, .copy-btn {{
-      font-size: 0.8rem;
-      padding: 0.2rem 0.55rem;
-      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
       text-decoration: none;
-      border: 1px solid #ccc;
-      color: #444;
-      background: #f8f8f8;
+      border: none;
+      color: #fff;
+      background: #1a1a1a;
       cursor: pointer;
       font-family: inherit;
       white-space: nowrap;
+      transition: background 0.15s;
     }}
-    .links a:hover, .copy-btn:hover {{ background: #eee; }}
-    .copy-btn.copied {{ color: green; border-color: green; }}
-    .ics-link {{ color: #999; }}
-    details {{ margin-top: 1rem; }}
+    .links a:hover, .copy-btn:hover {{ background: #3a3a3a; }}
+    .copy-btn.copied {{ background: #16a34a; }}
+    .ics-link {{
+      background: transparent;
+      color: #999;
+      border: 1px solid #ddd;
+    }}
+    .ics-link:hover {{ background: #f5f5f5; color: #666; }}
+    details {{ margin-top: 0.5rem; }}
     summary {{
       cursor: pointer;
       font-weight: 500;
       user-select: none;
-      padding: 0.25rem 0;
+      padding: 0.35rem 0;
     }}
-    .instructions {{ margin-top: 1rem; }}
+    .instructions {{ margin-top: 1.25rem; }}
     .instructions h3 {{
       font-size: 1rem;
-      margin: 1.25rem 0 0.25rem;
+      margin: 1.5rem 0 0.35rem;
     }}
-    .instructions h3:first-child {{ margin-top: 0.5rem; }}
-    .instructions ol, .instructions p {{
+    .instructions h3:first-child {{ margin-top: 0; }}
+    .instructions ol {{
       margin: 0;
       padding-left: 1.25rem;
     }}
-    .instructions p {{ padding-left: 0; }}
-    footer {{
-      margin-top: 3rem;
-      font-size: 0.8rem;
-      color: #999;
+    .instructions p {{
+      margin: 0.5rem 0 0;
     }}
-    footer a {{ color: #999; }}
+    footer {{
+      margin-top: 4rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }}
+    footer a {{ color: #aaa; }}
   </style>
 </head>
 <body>
@@ -218,23 +226,12 @@ def generate_index(series_entries):
   <details>
     <summary>How to subscribe</summary>
     <div class="instructions">
-      <h3>Google Calendar</h3>
+      <h3>Google, Apple &amp; Outlook</h3>
       <ol>
-        <li>Click the <strong>Google</strong> link next to the calendar you want.</li>
-        <li>Click <em>Add calendar</em> to confirm.</li>
+        <li>Click the <strong>Google</strong>, <strong>Apple</strong>, or <strong>Outlook</strong> button next to the calendar you want.</li>
+        <li>Your browser opens the respective service with the calendar pre-filled. Confirm when prompted — the button is usually labelled <em>Add calendar</em>, <em>Subscribe</em>, or <em>Import</em>.</li>
       </ol>
-
-      <h3>Apple Calendar (macOS / iOS)</h3>
-      <ol>
-        <li>Click the <strong>Apple</strong> link next to the calendar you want.</li>
-        <li>Your calendar app opens and asks to subscribe — click <em>Subscribe</em>.</li>
-      </ol>
-
-      <h3>Outlook</h3>
-      <ol>
-        <li>Click the <strong>Outlook</strong> link next to the calendar you want.</li>
-        <li>Sign in if prompted, then click <em>Import</em>.</li>
-      </ol>
+      <p>Note: the <strong>Apple</strong> button uses a <code>webcal://</code> link, which opens directly in Apple Calendar or any other app registered to handle it.</p>
 
       <h3>Proton Calendar</h3>
       <ol>
