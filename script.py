@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from ics import Calendar, Event
 from urllib.parse import quote
+from ics.grammar.parse import ContentLine
 import re
 import hashlib
 import unicodedata
@@ -92,8 +93,9 @@ def make_ics_event(ev):
     return e
 
 
-def write_calendar(events, path):
+def write_calendar(events, path, name):
     cal = Calendar()
+    cal.extra.append(ContentLine("X-WR-CALNAME", {}, f"TrIQ: {name}"))
     for ev in events:
         cal.events.add(make_ics_event(ev))
     with open(path, "w", encoding="utf-8") as f:
@@ -255,7 +257,7 @@ def main():
     if not events:
         raise ValueError("No events found — parsing likely failed")
 
-    write_calendar(events, "triq_all_events.ics")
+    write_calendar(events, "triq_all_events.ics", "All Events")
     print("Written: triq_all_events.ics")
 
     series_map = defaultdict(lambda: {"title": None, "events": []})
@@ -269,7 +271,7 @@ def main():
     for data in series_map.values():
         if len(data["events"]) >= 2:
             filename = f"triq_{slugify(data['title'])}.ics"
-            write_calendar(data["events"], filename)
+            write_calendar(data["events"], filename, data["title"])
             print(f"Written: {filename}")
             series_entries.append({"display_name": data["title"], "filename": filename})
 
