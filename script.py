@@ -210,8 +210,6 @@ def generate_index(series_entries):
       border: 1px solid #ddd;
     }}
     .ics-link:hover {{ background: #f5f5f5; color: #666; }}
-    .ig-note {{ font-size: 0.9rem; color: #555; margin-bottom: 2rem; }}
-    .ig-note a {{ color: #555; }}
     details {{ margin-top: 0.5rem; }}
     summary {{
       cursor: pointer;
@@ -227,10 +225,10 @@ def generate_index(series_entries):
     }}
     footer {{
       margin-top: 4rem;
-      font-size: 0.8rem;
-      color: #aaa;
+      font-size: 0.9rem;
+      color: #555;
     }}
-    footer a {{ color: #aaa; }}
+    footer a {{ color: #555; }}
   </style>
 </head>
 <body>
@@ -238,8 +236,6 @@ def generate_index(series_entries):
 
   <ul>
 {rows}  </ul>
-
-  <p class="ig-note">For last-minute changes or cancellations, check TrIQ's <a href="{TRIQ_INSTAGRAM_URL}" target="_blank" rel="noopener">Instagram</a>.</p>
 
   <details>
     <summary>How to subscribe</summary>
@@ -253,7 +249,8 @@ def generate_index(series_entries):
   </details>
 
   <footer>
-    <p>Updated every 12 hours. Not affiliated with TransInterQueer e.V. &middot; <a href="https://github.com/supernovaria/triq-calendar">Source</a></p>
+    <p>For last-minute changes or cancellations, check TrIQ's <a href="{TRIQ_INSTAGRAM_URL}" target="_blank" rel="noopener">Instagram</a>.</p>
+    <p>Updated every 12 hours &middot; Not affiliated with TransInterQueer e.V. &middot; <a href="https://github.com/supernovaria/triq-calendar">Source</a></p>
   </footer>
 
   <script>
