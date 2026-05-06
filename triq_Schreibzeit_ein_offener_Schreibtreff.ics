@@ -3,7 +3,7 @@ X-WR-CALNAME:TrIQ: Schreibzeit: ein offener Schreibtreff
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Source: transinterqueer.org
+DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260521T150000Z
@@ -11,7 +11,7 @@ SUMMARY:Schreibzeit: ein offener Schreibtreff
 UID:2438b0c4370274e9b8746e9032095359
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Source: transinterqueer.org
+DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260507T150000Z
@@ -19,7 +19,7 @@ SUMMARY:Schreibzeit: ein offener Schreibtreff
 UID:5f6dffa0ad5ac14d8b743653c4f9cfa4
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Source: transinterqueer.org
+DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260604T150000Z
@@ -27,7 +27,7 @@ SUMMARY:Schreibzeit: ein offener Schreibtreff
 UID:72bf2dcd7b0b9055a90d9f9b973f5e13
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Source: transinterqueer.org
+DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nin der WühlischVierzig\, Wühlischstr. 40\, 10245 Berlin\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260529T150000Z

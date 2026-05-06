@@ -15,6 +15,7 @@ BERLIN = ZoneInfo("Europe/Berlin")
 URL = "https://www.transinterqueer.org/en/offers-and-projects/events-2/"
 BASE_URL = "https://supernovaria.github.io/triq-calendar"
 TRIQ_EVENTS_URL = "https://www.transinterqueer.org/en/offers-and-projects/events-2/"
+TRIQ_INSTAGRAM_URL = "https://www.instagram.com/transinterqueer/"
 
 
 def parse_date(line):
@@ -48,12 +49,19 @@ def extract_events():
     events = []
     current_date = None
     pending_time = None
+    current_event = None
+
+    def flush():
+        if current_event:
+            events.append(current_event)
 
     for line in lines:
         line = line.strip()
 
         date = parse_date(line)
         if date:
+            flush()
+            current_event = None
             current_date = date
             pending_time = None
             continue
@@ -62,6 +70,8 @@ def extract_events():
             continue
 
         if is_time_only(line):
+            flush()
+            current_event = None
             pending_time = line
             continue
 
@@ -69,11 +79,14 @@ def extract_events():
             try:
                 time_obj = datetime.strptime(pending_time, "%H:%M").time()
                 start_dt = datetime.combine(current_date, time_obj).replace(tzinfo=BERLIN)
-                events.append({"title": line, "start": start_dt})
+                current_event = {"title": line, "start": start_dt, "desc": []}
             except ValueError:
                 pass
             pending_time = None
+        elif current_event is not None:
+            current_event["desc"].append(line)
 
+    flush()
     return events
 
 
@@ -89,7 +102,12 @@ def make_ics_event(ev):
     e.duration = timedelta(hours=2)
     e.uid = generate_uid(ev["title"], ev["start"])
     e.location = "TransInterQueer e.V., Berlin"
-    e.description = "Source: transinterqueer.org"
+    parts = []
+    if ev.get("desc"):
+        parts.append("\n".join(ev["desc"]))
+    parts.append(f"Source: {TRIQ_EVENTS_URL}")
+    parts.append(f"Instagram (for last-minute changes): {TRIQ_INSTAGRAM_URL}")
+    e.description = "\n\n".join(parts)
     return e
 
 
@@ -192,6 +210,8 @@ def generate_index(series_entries):
       border: 1px solid #ddd;
     }}
     .ics-link:hover {{ background: #f5f5f5; color: #666; }}
+    .ig-note {{ font-size: 0.9rem; color: #555; margin-bottom: 2rem; }}
+    .ig-note a {{ color: #555; }}
     details {{ margin-top: 0.5rem; }}
     summary {{
       cursor: pointer;
@@ -219,13 +239,16 @@ def generate_index(series_entries):
   <ul>
 {rows}  </ul>
 
+  <p class="ig-note">For last-minute changes or cancellations, check TrIQ's <a href="{TRIQ_INSTAGRAM_URL}" target="_blank" rel="noopener">Instagram</a>.</p>
+
   <details>
     <summary>How to subscribe</summary>
     <div class="instructions">
-      <p><strong>Google</strong> — Click the Google button and confirm when prompted. Google will name the calendar after its URL; to rename it, click the three dots next to it in the sidebar → Settings → Name.</p>
-      <p><strong>Apple &amp; Outlook</strong> — Click the respective button; your browser opens the service with the calendar pre-filled. Confirm when prompted.</p>
-      <p><strong>Proton Calendar</strong> — Click <strong>Copy link</strong>, then in Proton Calendar go to Settings → Calendars → Add calendar → Subscribe to calendar and paste the link.</p>
-      <p><strong>Other apps</strong> — Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature.</p>
+      <p><strong>Google</strong> — Click the Google button and confirm when prompted. Google will name the calendar after its URL; to rename it, click the three dots next to it in the sidebar → Settings → Name. The calendar syncs automatically every ~24 hours. On mobile, make sure the sync toggle is enabled for the calendar in the Google Calendar app settings.</p>
+      <p><strong>Apple</strong> — Click the Apple button; it opens directly in Apple Calendar. Confirm when prompted. The calendar refreshes automatically based on your system's fetch interval (Calendar → Settings → Accounts → Fetch New Data).</p>
+      <p><strong>Outlook</strong> — Click the Outlook button; it opens with the calendar pre-filled. Confirm when prompted. Outlook refreshes subscribed calendars automatically every few hours.</p>
+      <p><strong>Proton Calendar</strong> — Click <strong>Copy link</strong>, then in Proton Calendar go to Settings → Calendars → Add calendar → Subscribe to calendar and paste the link. Proton refreshes subscribed calendars automatically.</p>
+      <p><strong>Other apps</strong> — Click <strong>Copy link</strong> and paste the URL into your app's "subscribe" or "add by URL" feature. Most calendar apps refresh subscriptions automatically.</p>
     </div>
   </details>
 
