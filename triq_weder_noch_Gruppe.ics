@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:TrIQ: weder*noch-Gruppe
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\nTrIQ e. V. thrives on participation\, so if you have an idea for an event and would like to get TrIQ involved\, feel free to contact us by email with a brief outline of your idea.\nKontakt\ntriq\ntransinterqueer.org\nTransInterQueer e.V.\nGürtelstraße 35\, 10247 Berlin\n+49 (0) 30 – 76 95 25 15\n(Monday 10-12 am\, Thursday 2-4 pm)\ntriq\ntransinterqueer.org\nwww.transinterqueer.org\nThe specialist office TIN at TrIQ is encouraged by the Berliner State Office for Equal Treatment – Against Discrimination (LADS) within the Senate Department for Labor\, Social Affairs\, Equality\, Integration\, Diversity and Anti-Discrimination. ( German:\nLandesstelle für Gleichbehandlung – gegen\nDiskriminierung\n(LADS) innerhalb der Senatsverwaltung Arbeit\, Soziales\, Gleichstellung\, Integration\, Vielfalt und Antidiskriminierung\n.)\nImprint\nDonations\nNewsletter\nAccessibility\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260610T170000Z
+SUMMARY:weder*noch-Gruppe
+UID:086c8b124a301b71e9a7b0531d632eac
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260513T170000Z
+SUMMARY:weder*noch-Gruppe
+UID:3d032d20b5f8d8df0c53482fc675f9c6
+END:VEVENT
+END:VCALENDAR
