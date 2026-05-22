@@ -3,12 +3,12 @@ X-WR-CALNAME:TrIQ: StrIQ-Treff
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\nTrIQ e. V. thrives on participation\, so if you have an idea for an event and would like to get TrIQ involved\, feel free to contact us by email with a brief outline of your idea.\nKontakt\ntriq\ntransinterqueer.org\nTransInterQueer e.V.\nGürtelstraße 35\, 10247 Berlin\n+49 (0) 30 – 76 95 25 15\n(Monday 10-12 am\, Thursday 2-4 pm)\ntriq\ntransinterqueer.org\nwww.transinterqueer.org\nThe specialist office TIN at TrIQ is encouraged by the Berliner State Office for Equal Treatment – Against Discrimination (LADS) within the Senate Department for Labor\, Social Affairs\, Equality\, Integration\, Diversity and Anti-Discrimination. ( German:\nLandesstelle für Gleichbehandlung – gegen\nDiskriminierung\n(LADS) innerhalb der Senatsverwaltung Arbeit\, Soziales\, Gleichstellung\, Integration\, Vielfalt und Antidiskriminierung\n.)\nImprint\nDonations\nNewsletter\nAccessibility\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260521T160000Z
+DTSTART:20260618T160000Z
 SUMMARY:STrIQ-Treff
-UID:398639e298e22496f15a3609ab07714b
+UID:3f8a79cae2cab844c5280a20eba3b64c
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -17,13 +17,5 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260604T160000Z
 SUMMARY:StrIQ-Treff
 UID:bdfebe06c4d88377d0a17bf509d8890f
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260507T160000Z
-SUMMARY:StrIQ-Treff
-UID:1d459c8205b1727996970c4cd5c0a81e
 END:VEVENT
 END:VCALENDAR
