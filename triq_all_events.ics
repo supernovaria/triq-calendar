@@ -123,6 +123,14 @@ SUMMARY:weder*noch-Gruppe
 UID:086c8b124a301b71e9a7b0531d632eac
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Mehr Infos:\nhttps://www.transinterqueer.org/angebote/gruppen/questioning-gruppe/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260608T160000Z
+SUMMARY:Questioning-Gruppe
+UID:1b3455c83fff8bc549a72c272c92678b
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -153,6 +161,14 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260624T170000Z
 SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:f17372cfc54e0f30dbaf83bcface26f2
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mehr Infos:\nhttps://www.transinterqueer.org/angebote/beratung/offene-beratung/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260601T140000Z
+SUMMARY:Offene Beratung
+UID:365ad9ddfed8d6ec3f6432cafa78c69c
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:5 Haziran Cuma gününe ertelendi\n***\narasında TBB ofisinde (Oranienstr. 53\, 10969 Berlin)\nRandevu Oluşturma:\ntriq@tbb-berlin.de\nya da 030 / 61305327 (her ayın danışmanlık gününden önceki gün 10.00-12.00 saatleri arasında)\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
