@@ -26,12 +26,4 @@ DTSTART:20260618T150000Z
 SUMMARY:Schreibzeit: ein offener Schreibtreff
 UID:1f8f42c726241a5ffff851117bb63439
 END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nin der WühlischVierzig\, Wühlischstr. 40\, 10245 Berlin\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260529T150000Z
-SUMMARY:Schreibzeit: ein offener Schreibtreff
-UID:e2225d1358c9d919d7b9d0cc0f4333be
-END:VEVENT
 END:VCALENDAR
