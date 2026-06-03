@@ -19,7 +19,7 @@ SUMMARY:Trans*\, Inter* ve Nonbinary (İkili Olmayan)’ler için Genel Danışm
 UID:03835341ee4b8eed118ee24b6050f234
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\nTrIQ e. V. thrives on participation\, so if you have an idea for an event and would like to get TrIQ involved\, feel free to contact us by email with a brief outline of your idea.\nKontakt\ntriq\ntransinterqueer.org\nTransInterQueer e.V.\nGürtelstraße 35\, 10247 Berlin\n+49 (0) 30 – 76 95 25 15\n(Monday 10-12 am\, Thursday 2-4 pm)\ntriq\ntransinterqueer.org\nwww.transinterqueer.org\nThe specialist office TIN at TrIQ is encouraged by the Berliner State Office for Equal Treatment – Against Discrimination (LADS) within the Senate Department for Labor\, Social Affairs\, Equality\, Integration\, Diversity and Anti-Discrimination. ( German:\nLandesstelle für Gleichbehandlung – gegen\nDiskriminierung\n(LADS) innerhalb der Senatsverwaltung Arbeit\, Soziales\, Gleichstellung\, Integration\, Vielfalt und Antidiskriminierung\n.)\nImprint\nDonations\nNewsletter\nAccessibility\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260701T170000Z
@@ -33,6 +33,14 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260604T150000Z
 SUMMARY:Schreibzeit: ein offener Schreibtreff
 UID:72bf2dcd7b0b9055a90d9f9b973f5e13
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\nTrIQ e. V. thrives on participation\, so if you have an idea for an event and would like to get TrIQ involved\, feel free to contact us by email with a brief outline of your idea.\nKontakt\ntriq\ntransinterqueer.org\nTransInterQueer e.V.\nGürtelstraße 35\, 10247 Berlin\n+49 (0) 30 – 76 95 25 15\n(Monday 10-12 am\, Thursday 2-4 pm)\ntriq\ntransinterqueer.org\nwww.transinterqueer.org\nThe specialist office TIN at TrIQ is encouraged by the Berliner State Office for Equal Treatment – Against Discrimination (LADS) within the Senate Department for Labor\, Social Affairs\, Equality\, Integration\, Diversity and Anti-Discrimination. ( German:\nLandesstelle für Gleichbehandlung – gegen\nDiskriminierung\n(LADS) innerhalb der Senatsverwaltung Arbeit\, Soziales\, Gleichstellung\, Integration\, Vielfalt und Antidiskriminierung\n.)\nImprint\nDonations\nNewsletter\nAccessibility\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260702T160000Z
+SUMMARY:StrIQ-Treff
+UID:eaefd10f4e55883e223a7d1d73a945b7
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
