@@ -6,30 +6,23 @@ from ics import Calendar, Event
 from urllib.parse import quote
 from ics.grammar.parse import ContentLine
 import re
+import os
+import glob
 import hashlib
 import unicodedata
-from collections import defaultdict
+from collections import defaultdict, Counter
 
 BERLIN = ZoneInfo("Europe/Berlin")
+
+# The source page only lists start times, so events get a fixed default length.
+# _parse_end() will override this if the page ever exposes an end time.
+DEFAULT_DURATION = timedelta(hours=2)
+UID_DOMAIN = "triq-calendar.github.io"
 
 URL = "https://www.transinterqueer.org/en/offers-and-projects/events-2/"
 BASE_URL = "https://supernovaria.github.io/triq-calendar"
 TRIQ_EVENTS_URL = "https://www.transinterqueer.org/en/offers-and-projects/events-2/"
 TRIQ_INSTAGRAM_URL = "https://www.instagram.com/transinterqueer/"
-
-
-def parse_date(line):
-    try:
-        parts = line.split(",", 1)
-        if len(parts) == 2:
-            return datetime.strptime(parts[1].strip(), "%d %B %Y").date()
-    except ValueError:
-        pass
-    return None
-
-
-def is_time_only(line):
-    return bool(re.match(r"^\d{1,2}:\d{2}$", line.strip()))
 
 
 def slugify(title):
@@ -39,72 +32,102 @@ def slugify(title):
     return title.strip("_")
 
 
+def normalize_title(title):
+    """Casing/whitespace-insensitive key for grouping a series and for UIDs."""
+    return re.sub(r"\s+", " ", title).strip().lower()
+
+
+def _parse_dt(iso, epoch):
+    """Prefer the ISO datetime (carries the correct DST offset); fall back to epoch."""
+    if iso:
+        try:
+            return datetime.fromisoformat(iso).astimezone(BERLIN)
+        except ValueError:
+            pass
+    if epoch and epoch.lstrip("-").isdigit():
+        return datetime.fromtimestamp(int(epoch), tz=BERLIN)
+    return None
+
+
+def _parse_start(li):
+    span = li.select_one(".simcal-event-start")
+    iso = span.get("content") if span else None
+    return _parse_dt(iso, li.get("data-start"))
+
+
+def _parse_end(li, start):
+    span = li.select_one(".simcal-event-end")
+    iso = span.get("content") if span else None
+    end = _parse_dt(iso, li.get("data-end"))
+    return end if end and end > start else None
+
+
+def _clean_description(desc_el):
+    if desc_el is None:
+        return ""
+    lines = [l.strip() for l in desc_el.get_text("\n", strip=True).split("\n")]
+    cleaned = []
+    for l in lines:
+        # collapse runs of blank lines introduced by <br><br>
+        if not l and (not cleaned or not cleaned[-1]):
+            continue
+        cleaned.append(l)
+    return "\n".join(cleaned).strip()
+
+
 def extract_events():
     res = requests.get(URL, timeout=15)
     res.raise_for_status()
 
     soup = BeautifulSoup(res.text, "html.parser")
-    lines = [l for l in soup.get_text("\n", strip=True).split("\n") if l.strip()]
+    # The page is rendered by the Simple Calendar (simcal) WordPress plugin, which
+    # emits structured, microdata-tagged markup. Parsing the DOM directly is far more
+    # robust than walking the flattened page text and avoids footer/nav bleed-through.
+    container = soup.select_one("div.simcal-calendar-list")
+    if container is None:
+        raise ValueError(
+            "simcal calendar container not found — the events page structure changed"
+        )
 
     events = []
-    current_date = None
-    pending_time = None
-    current_event = None
-
-    def flush():
-        if current_event:
-            events.append(current_event)
-
-    for line in lines:
-        line = line.strip()
-
-        date = parse_date(line)
-        if date:
-            flush()
-            current_event = None
-            current_date = date
-            pending_time = None
+    for li in container.select("li.simcal-event"):
+        title_el = li.select_one(".simcal-event-title")
+        start = _parse_start(li)
+        if title_el is None or start is None:
             continue
-
-        if not current_date:
+        title = title_el.get_text(strip=True)
+        if not title:
             continue
-
-        if is_time_only(line):
-            flush()
-            current_event = None
-            pending_time = line
-            continue
-
-        if pending_time:
-            try:
-                time_obj = datetime.strptime(pending_time, "%H:%M").time()
-                start_dt = datetime.combine(current_date, time_obj).replace(tzinfo=BERLIN)
-                current_event = {"title": line, "start": start_dt, "desc": []}
-            except ValueError:
-                pass
-            pending_time = None
-        elif current_event is not None:
-            current_event["desc"].append(line)
-
-    flush()
+        events.append({
+            "title": title,
+            "start": start,
+            "end": _parse_end(li, start),
+            "desc": _clean_description(li.select_one(".simcal-event-description")),
+        })
     return events
 
 
 def generate_uid(title, start_dt):
-    base = f"{title}-{start_dt.isoformat()}"
-    return hashlib.md5(base.encode()).hexdigest()
+    # Key on the normalized title + date only, so upstream casing fixes or small
+    # time shifts don't mint a new UID (which subscribers would see as a duplicate).
+    base = f"{normalize_title(title)}-{start_dt.date().isoformat()}"
+    digest = hashlib.md5(base.encode()).hexdigest()
+    return f"{digest}@{UID_DOMAIN}"
 
 
 def make_ics_event(ev):
     e = Event()
     e.name = ev["title"]
     e.begin = ev["start"]
-    e.duration = timedelta(hours=2)
+    if ev.get("end"):
+        e.end = ev["end"]
+    else:
+        e.duration = DEFAULT_DURATION
     e.uid = generate_uid(ev["title"], ev["start"])
     e.location = "TransInterQueer e.V., Berlin"
     parts = []
     if ev.get("desc"):
-        parts.append("\n".join(ev["desc"]))
+        parts.append(ev["desc"])
     parts.append(f"Source: {TRIQ_EVENTS_URL}")
     parts.append(f"Instagram (for last-minute changes): {TRIQ_INSTAGRAM_URL}")
     e.description = "\n\n".join(parts)
@@ -114,8 +137,13 @@ def make_ics_event(ev):
 def write_calendar(events, path, name):
     cal = Calendar()
     cal.extra.append(ContentLine("X-WR-CALNAME", {}, f"TrIQ: {name}"))
+    seen = set()
     for ev in events:
-        cal.events.add(make_ics_event(ev))
+        e = make_ics_event(ev)
+        if e.uid in seen:
+            continue
+        seen.add(e.uid)
+        cal.events.add(e)
     with open(path, "w", encoding="utf-8") as f:
         f.writelines(cal)
 
@@ -276,25 +304,42 @@ def main():
     events = extract_events()
     print(f"Found {len(events)} events")
     if not events:
-        raise ValueError("No events found — parsing likely failed")
+        raise ValueError("No events parsed — parsing likely failed")
+
+    # Group by normalized title, then pick the most common casing as the canonical
+    # name so a single odd spelling upstream (e.g. "STrIQ-Treff") doesn't decide the
+    # series name or filename. Apply it to every event so all feeds agree.
+    series_map = defaultdict(list)
+    for ev in events:
+        series_map[normalize_title(ev["title"])].append(ev)
+    for group in series_map.values():
+        canonical = Counter(e["title"] for e in group).most_common(1)[0][0]
+        for e in group:
+            e["title"] = canonical
+
+    written = set()
 
     write_calendar(events, "triq_all_events.ics", "All Events")
+    written.add("triq_all_events.ics")
     print("Written: triq_all_events.ics")
 
-    series_map = defaultdict(lambda: {"title": None, "events": []})
-    for ev in events:
-        key = ev["title"].lower().strip()
-        if series_map[key]["title"] is None:
-            series_map[key]["title"] = ev["title"]
-        series_map[key]["events"].append(ev)
-
     series_entries = []
-    for data in series_map.values():
-        if len(data["events"]) >= 2:
-            filename = f"triq_{slugify(data['title'])}.ics"
-            write_calendar(data["events"], filename, data["title"])
-            print(f"Written: {filename}")
-            series_entries.append({"display_name": data["title"], "filename": filename})
+    for group in series_map.values():
+        if len(group) < 2:
+            continue
+        name = group[0]["title"]
+        filename = f"triq_{slugify(name)}.ics"
+        write_calendar(group, filename, name)
+        written.add(filename)
+        print(f"Written: {filename}")
+        series_entries.append({"display_name": name, "filename": filename})
+
+    # Prune series files that are no longer generated (e.g. a series that dropped
+    # below the 2-event threshold), otherwise old feeds keep getting served stale.
+    for path in glob.glob("triq_*.ics"):
+        if path not in written:
+            os.remove(path)
+            print(f"Removed stale: {path}")
 
     generate_index(series_entries)
     print("Written: index.html")
