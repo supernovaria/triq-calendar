@@ -6,6 +6,14 @@ BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260624T170000Z
+SUMMARY:TIN Read
+UID:dd95064604741e9f3af630ac960f5987@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260708T170000Z
 SUMMARY:TIN Read
 UID:90741e1c777a7bd5ca976012cc1c0498@triq-calendar.github.io
@@ -14,17 +22,17 @@ BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260617T170000Z
+DTSTART:20260715T170000Z
 SUMMARY:TIN Read
-UID:15d183b7ba2b5c0cc7f209e45e689eba@triq-calendar.github.io
+UID:fbbefc1ad8ec15eaedf56310a18ae91e@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260624T170000Z
+DTSTART:20260617T170000Z
 SUMMARY:TIN Read
-UID:dd95064604741e9f3af630ac960f5987@triq-calendar.github.io
+UID:15d183b7ba2b5c0cc7f209e45e689eba@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
