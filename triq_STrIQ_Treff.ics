@@ -18,4 +18,12 @@ DTSTART:20260702T160000Z
 SUMMARY:STrIQ-Treff
 UID:5b78abbe3c6a7cd84dbc3c3edcf3c2d0@triq-calendar.github.io
 END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260716T160000Z
+SUMMARY:STrIQ-Treff
+UID:bafc38e8ddb159624ae27f34cebb0a53@triq-calendar.github.io
+END:VEVENT
 END:VCALENDAR
