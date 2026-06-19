@@ -7,7 +7,7 @@ DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260716T160000Z
-SUMMARY:STrIQ-Treff
+SUMMARY:StrIQ-Treff
 UID:bafc38e8ddb159624ae27f34cebb0a53@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
@@ -41,14 +41,6 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260624T170000Z
 SUMMARY:TIN Read
 UID:dd95064604741e9f3af630ac960f5987@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Sprechtraining für tin* Personen - mit Anmeldung\nMehr Infos\nhier.\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260702T170000Z
-SUMMARY:Stimmtraining
-UID:0bbb5cd8bd525c7cf5e26c15642a3a6a@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -87,7 +79,7 @@ DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260702T160000Z
-SUMMARY:STrIQ-Treff
+SUMMARY:StrIQ-Treff
 UID:5b78abbe3c6a7cd84dbc3c3edcf3c2d0@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
@@ -99,14 +91,6 @@ SUMMARY:Trans*Femme-Gruppe
 UID:2347f262411b5364d3f75a3925017803@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260618T160000Z
-SUMMARY:STrIQ-Treff
-UID:5b88f4356634a407d6deef6d103ab803@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -115,12 +99,12 @@ SUMMARY:weder*noch-Gruppe
 UID:523bcc28afb34f92db0f1217d1e0ec7d@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Schreibzeit: ein offener Schreibtreff für TIN Personen und Queers\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DESCRIPTION:Sprechtraining für tin* Personen - mit Anmeldung\nMehr Infos\nhier.\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260618T150000Z
-SUMMARY:Schreibzeit: ein offener Schreibtreff
-UID:4532dea2534cfa56d6ccc7c6afe88ae9@triq-calendar.github.io
+DTSTART:20260702T170000Z
+SUMMARY:Stimmtraining
+UID:0bbb5cd8bd525c7cf5e26c15642a3a6a@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
