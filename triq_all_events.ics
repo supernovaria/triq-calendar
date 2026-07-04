@@ -139,11 +139,11 @@ SUMMARY:weder*noch-Gruppe
 UID:523bcc28afb34f92db0f1217d1e0ec7d@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DESCRIPTION:Source: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260703T160000Z
-SUMMARY:Trans*Femme-Gruppe
-UID:2347f262411b5364d3f75a3925017803@triq-calendar.github.io
+DTSTART:20260803T160000Z
+SUMMARY:Questioning Gruppe
+UID:093dde4446e5acd5d00f1e7be3daf1ae@triq-calendar.github.io
 END:VEVENT
 END:VCALENDAR
