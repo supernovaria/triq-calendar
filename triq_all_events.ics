@@ -27,12 +27,12 @@ SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:f700ba4ea0898b777ed0fcd0faf4351b@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:arasında TBB ofisinde (Oranienstr. 53\, 10969 Berlin)\nRandevu Oluşturma:\ntriq@tbb-berlin.de\nya da 030 / 61305327 (her ayın danışmanlık gününden önceki gün 10.00-12.00 saatleri arasında)\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260710T080000Z
-SUMMARY:Trans*\, Inter* ve Nonbinary (İkili Olmayan)’ler için Genel Danışmanlık
-UID:09fab18954da2fb36a4a6986a6ebaae7@triq-calendar.github.io
+DTSTART:20260805T170000Z
+SUMMARY:TIN Read
+UID:6c17abc6a66f70de3d6112a7fa417e61@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Ort und Uhrzeit bitte per Email an inter@transinterqueer.org erfragen.\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -41,14 +41,6 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260710T220059Z
 SUMMARY:inter* Übersetzungsparty
 UID:efc6b86b3c3cc69e84569fc0cf908d57@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260805T170000Z
-SUMMARY:TIN Read
-UID:6c17abc6a66f70de3d6112a7fa417e61@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -65,6 +57,14 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260806T150000Z
 SUMMARY:Schreibzeit
 UID:89b7df12e53580fdb5f326c7d2952f32@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260807T160000Z
+SUMMARY:Trans*Femme-Gruppe
+UID:e593c41cc5b37c72bef9abc08fe2df55@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -89,14 +89,6 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260722T170000Z
 SUMMARY:TIN Read
 UID:c59496fa701a18b3f091b06630dfb6ec@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260807T160000Z
-SUMMARY:Trans*Femme-Gruppe
-UID:e593c41cc5b37c72bef9abc08fe2df55@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Offener Schreibtreff für TIN Personen und Queers\nMehr Infos:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
