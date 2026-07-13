@@ -42,4 +42,12 @@ DTSTART:20260722T170000Z
 SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:f7858d970639f7376eba03c949eda903@triq-calendar.github.io
 END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260812T170000Z
+SUMMARY:TrIQ-Bibliothek hat geöffnet
+UID:10b7fa7e6f90f38ae84d5f273bb60eee@triq-calendar.github.io
+END:VEVENT
 END:VCALENDAR
