@@ -6,9 +6,17 @@ BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260729T170000Z
+DTSTART:20260805T170000Z
 SUMMARY:TIN Read
-UID:520c9b44d90f053caff4827628db0f24@triq-calendar.github.io
+UID:6c17abc6a66f70de3d6112a7fa417e61@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260722T170000Z
+SUMMARY:TIN Read
+UID:c59496fa701a18b3f091b06630dfb6ec@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -22,16 +30,16 @@ BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260805T170000Z
+DTSTART:20260729T170000Z
 SUMMARY:TIN Read
-UID:6c17abc6a66f70de3d6112a7fa417e61@triq-calendar.github.io
+UID:520c9b44d90f053caff4827628db0f24@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260722T170000Z
+DTSTART:20260819T170000Z
 SUMMARY:TIN Read
-UID:c59496fa701a18b3f091b06630dfb6ec@triq-calendar.github.io
+UID:f1a2380c2932d3e65362c995ff511a55@triq-calendar.github.io
 END:VEVENT
 END:VCALENDAR
