@@ -75,28 +75,12 @@ SUMMARY:inter* Fitness day (Kooperation mit Seitenwechsel)
 UID:d5d08ef1167df2eedbd31070c71859fd@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260729T170000Z
-SUMMARY:TIN Read
-UID:520c9b44d90f053caff4827628db0f24@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260812T170000Z
 SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:10b7fa7e6f90f38ae84d5f273bb60eee@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Offener Austauschraum nach Angriffen auf den Berliner CSD für alle\, diegerade zusammen sein\, sich autauschen und mit eigenen Gefühlen und Gedanken nicht alleine bleiben wollen.\n**\nGet-togehter in light of the attack on CSD Berlin\, open for anyone who wants to be in\nCommunity\n\, share thoughts and feelings or just doesn't want to be alone.\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260729T150000Z
-SUMMARY:Offener Austauschraum / get-together
-UID:ac5e14ee8923161c03dca89ac39e53d7@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -163,12 +147,12 @@ SUMMARY:Schreibzeit
 UID:89b7df12e53580fdb5f326c7d2952f32@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DESCRIPTION:Besucht uns am Stand 27 beim Queeren Parkfest.\nMehr Infos hier:\nhttps://queeres-parkfest-friedrichshain.de/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260729T170000Z
-SUMMARY:TrIQ-Bibliothek hat geöffnet
-UID:3552a42243e1bef4e636a02dd349827f@triq-calendar.github.io
+DTSTART:20260808T130000Z
+SUMMARY:TrIQ beim Queeren Parkfest
+UID:651f3ece1efd9d6963c7d88911b93638@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
