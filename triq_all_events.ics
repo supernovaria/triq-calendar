@@ -63,7 +63,7 @@ DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260903T160000Z
-SUMMARY:StrIQ-Treff
+SUMMARY:STrIQ-Treff
 UID:619dd3fa2b98fff1c35c045d0319a9aa@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
@@ -107,14 +107,6 @@ SUMMARY:TIN Read
 UID:f1a2380c2932d3e65362c995ff511a55@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260806T160000Z
-SUMMARY:StrIQ-Treff
-UID:cc57e2491bac649be55fa0f30ee5de0d@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Klönschnack in der Küche: kommt vorbei zum gemütlichen Plausch und Beisammensein in unserer WG-Küche\n(zeitgleich: Öffnungszeit der TrIQ-Bibliothek zum Stöbern und Schmökern)\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -129,14 +121,6 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260902T170000Z
 SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:534fba0474755771154376dbe215bc2c@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Offener Schreibtreff für TIN Personen und Queers\nMehr Infos:\nhttps://www.transinterqueer.org/angebote/gruppen/schreibzeit/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260806T150000Z
-SUMMARY:Schreibzeit
-UID:89b7df12e53580fdb5f326c7d2952f32@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Besucht uns am Stand 27 beim Queeren Parkfest.\nMehr Infos hier:\nhttps://queeres-parkfest-friedrichshain.de/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -175,7 +159,7 @@ DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260820T160000Z
-SUMMARY:StrIQ-Treff
+SUMMARY:STrIQ-Treff
 UID:d8f116f5978d533c12ee5e9fc28f8e49@triq-calendar.github.io
 END:VEVENT
 END:VCALENDAR
