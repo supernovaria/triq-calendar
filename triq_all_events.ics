@@ -131,14 +131,6 @@ SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:534fba0474755771154376dbe215bc2c@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Besucht uns am Stand 27 beim Queeren Parkfest.\nMehr Infos hier:\nhttps://queeres-parkfest-friedrichshain.de/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260808T130000Z
-SUMMARY:TrIQ beim Queeren Parkfest
-UID:651f3ece1efd9d6963c7d88911b93638@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
