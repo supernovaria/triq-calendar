@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:TrIQ: weder*noch-Gruppe
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260909T170000Z
+SUMMARY:weder*noch-Gruppe
+UID:e28b824f330b1e21e51b2d9b48d98b43@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260812T170000Z
+SUMMARY:weder*noch-Gruppe
+UID:c4deaf7195b72f391ab0416c423a5e9b@triq-calendar.github.io
+END:VEVENT
+END:VCALENDAR
