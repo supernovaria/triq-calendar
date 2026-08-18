@@ -43,14 +43,6 @@ SUMMARY:STrIQ-Treff
 UID:619dd3fa2b98fff1c35c045d0319a9aa@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260817T160000Z
-SUMMARY:TrIQ-Bibliothek hat geöffnet
-UID:2dd85e860e6c79ab285804bdb02b8d84@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -91,20 +83,20 @@ SUMMARY:TIN Read
 UID:e2872283e8cfb936d7abc7b3c90bd6d9@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260917T160000Z
+SUMMARY:STrIQ-Treff
+UID:5fd46f61da5e4275d365b1b7e4ff17e0@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260819T170000Z
 SUMMARY:TIN Read
 UID:f1a2380c2932d3e65362c995ff511a55@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Klönschnack in der Küche: kommt vorbei zum gemütlichen Plausch und Beisammensein in unserer WG-Küche\n(zeitgleich: Öffnungszeit der TrIQ-Bibliothek zum Stöbern und Schmökern)\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260817T160000Z
-SUMMARY:Klönschnack in der Küche
-UID:1065b588eb35c9a00748bf7c3ee9e762@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
