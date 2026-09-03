@@ -10,12 +10,4 @@ DTSTART:20261002T160000Z
 SUMMARY:Trans*Femme-Gruppe
 UID:bc9b69f53cf39c662651a4da573f8593@triq-calendar.github.io
 END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260904T160000Z
-SUMMARY:Trans*Femme-Gruppe
-UID:c1970a74b44cb5b9dae15bfc54251caf@triq-calendar.github.io
-END:VEVENT
 END:VCALENDAR
