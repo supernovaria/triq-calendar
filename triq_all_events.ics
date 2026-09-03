@@ -27,14 +27,6 @@ SUMMARY:Trans*\, Inter* ve Nonbinary (İkili Olmayan)’ler için Genel Danışm
 UID:035ad614b4e2d1371123304917416bd1@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260902T170000Z
-SUMMARY:TIN Read
-UID:80d8a2bb50773e04dc689c45844afbb4@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -83,6 +75,14 @@ SUMMARY:TIN Read
 UID:4f4efdc404488ffc7b018877613ed256@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:TIN denken\, leben\, kämpfen\nEine Tagung von und für trans*\, inter*\, nicht-binäre und andere gender*queere Personen\n2. bis 4. Oktober 2026\, Berlin\nMehr Informationen auf der Tagungsseite:\nhttps://www.transinterqueer.org/tin-tagung/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261001T220059Z
+SUMMARY:TIN-Tagung "TIN denken\, leben\, kämpfen"
+UID:ecd46d88b91d3d7308e179bd3deb2190@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -123,14 +123,6 @@ SUMMARY:StrIQ-Treff
 UID:5fd46f61da5e4275d365b1b7e4ff17e0@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260902T170000Z
-SUMMARY:TrIQ-Bibliothek hat geöffnet
-UID:534fba0474755771154376dbe215bc2c@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Source: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -169,6 +161,14 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260918T140000Z
 SUMMARY:TrIQnick
 UID:7f357d2aa8f004b8412809df38c871b4@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261002T160000Z
+SUMMARY:Trans*Femme-Gruppe
+UID:bc9b69f53cf39c662651a4da573f8593@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
