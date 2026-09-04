@@ -23,7 +23,7 @@ DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20261001T160000Z
-SUMMARY:StrIQ-Treff
+SUMMARY:STrIQ-Treff
 UID:7033e04cc31047cb426be8046dcb07d6@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
@@ -41,14 +41,6 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260921T160000Z
 SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:17c5db65b6ffd9c7040ae8346fb27cb2@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260903T160000Z
-SUMMARY:StrIQ-Treff
-UID:619dd3fa2b98fff1c35c045d0319a9aa@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
@@ -127,7 +119,7 @@ DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260917T160000Z
-SUMMARY:StrIQ-Treff
+SUMMARY:STrIQ-Treff
 UID:5fd46f61da5e4275d365b1b7e4ff17e0@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
