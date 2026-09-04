@@ -162,12 +162,4 @@ DTSTART:20260918T140000Z
 SUMMARY:TrIQnick
 UID:7f357d2aa8f004b8412809df38c871b4@triq-calendar.github.io
 END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:mehr Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20261002T160000Z
-SUMMARY:Trans*Femme-Gruppe
-UID:bc9b69f53cf39c662651a4da573f8593@triq-calendar.github.io
-END:VEVENT
 END:VCALENDAR
