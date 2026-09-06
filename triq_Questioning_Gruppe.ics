@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:TrIQ: Questioning Gruppe
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Source: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261005T160000Z
+SUMMARY:Questioning Gruppe
+UID:1c620872a735cf0f58b236d3d072f3b4@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Source: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260928T160000Z
+SUMMARY:Questioning Gruppe
+UID:ecbc4f8803a0d646f1be1d10e5abc9c6@triq-calendar.github.io
+END:VEVENT
+END:VCALENDAR
