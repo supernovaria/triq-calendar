@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:TrIQ: FÄLLT AUS: TrIQ-Bibliothek hat geöffnet
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20260921T160000Z
+SUMMARY:FÄLLT AUS: TrIQ-Bibliothek hat geöffnet
+UID:327f7ab52fb3c9ea2d3b14275c3ff3c6@triq-calendar.github.io
+END:VEVENT
+END:VCALENDAR
