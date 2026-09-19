@@ -83,6 +83,14 @@ SUMMARY:TIN-Tagung "TIN denken\, leben\, kämpfen"
 UID:ecd46d88b91d3d7308e179bd3deb2190@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Ort und Uhrzeit bitte per Email an inter@transinterqueer.org erfragen.\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261017T220059Z
+SUMMARY:inter* im Sport (Kooperation mit Seitenwechsel)
+UID:2ed22672050bb04e40ea61427db933ce@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
@@ -129,14 +137,6 @@ LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20261007T170000Z
 SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:19660b116c9b9de157b5deb23397080c@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:nähere Infos\nhier\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260918T140000Z
-SUMMARY:TrIQnick
-UID:7f357d2aa8f004b8412809df38c871b4@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:Mehr Info hier:\nhttps://www.transinterqueer.org/angebote/gruppen/weder-noch/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
