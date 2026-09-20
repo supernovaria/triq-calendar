@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:TrIQ: Klönschnack in der Küche
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:Klönschnack in der Küche: kommt vorbei zum gemütlichen Plausch und Beisammensein in unserer WG-Küche\n(zeitgleich: Öffnungszeit der TrIQ-Bibliothek zum Stöbern und Schmökern)\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261019T160000Z
+SUMMARY:Klönschnack in der Küche
+UID:ce929da56a221a85ced4eff492171a37@triq-calendar.github.io
+END:VEVENT
+END:VCALENDAR
