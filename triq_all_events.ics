@@ -46,22 +46,6 @@ BEGIN:VEVENT
 DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260923T170000Z
-SUMMARY:TIN Read
-UID:b5d362a898acbf2f0a9caefe6536f287@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20260923T170000Z
-SUMMARY:TrIQ-Bibliothek hat geöffnet
-UID:c24632ad74ef6b13c110b145200bbe88@triq-calendar.github.io
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
 DTSTART:20260930T170000Z
 SUMMARY:TIN Read
 UID:4f4efdc404488ffc7b018877613ed256@triq-calendar.github.io
