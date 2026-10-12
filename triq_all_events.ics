@@ -51,6 +51,14 @@ SUMMARY:intersex day of remembrance dayCommunityVeranstaltung
 UID:8a462edb9e803f2904e83801678928a1@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Inter* Visibility: Then\, Now\, and in the Future\nCommunity\n-Event zum/for Intersex Awareness Day\nnur für inter* Personen / inter* only\nAnmeldung/register: inter@transinterqueer.org\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261030T230059Z
+SUMMARY:Inter* Sichtbarkeit: damals\, heute und in Zukunft
+UID:fd9514da55df6e970f59fadce9ba29c6@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Lust auf Stricken oder Häkeln o.ä. mit anderen TIN-Personen?\nDann komm zu TrIQ zum STrIQ-Treff.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/gruppen/striqen/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
