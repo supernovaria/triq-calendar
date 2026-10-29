@@ -34,12 +34,4 @@ DTSTART:20261118T180000Z
 SUMMARY:TIN Read
 UID:e4d2a0d64f4ec59be4a291c2b7fa5b4b@triq-calendar.github.io
 END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Collective book reading @ TrIQ - more info:\nhttps://www.transinterqueer.org/angebote/gruppen/tin-read/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
-DURATION:PT2H
-LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20261028T180000Z
-SUMMARY:TIN Read
-UID:0068e896905ca1cea9a63d9e5ae4c6a2@triq-calendar.github.io
-END:VEVENT
 END:VCALENDAR
