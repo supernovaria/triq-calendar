@@ -75,6 +75,14 @@ SUMMARY:TrIQ-Bibliothek hat geöffnet
 UID:75b292ea0abe00e23be4ebcdd4d53b9a@triq-calendar.github.io
 END:VEVENT
 BEGIN:VEVENT
+DESCRIPTION:Source: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
+DURATION:PT2H
+LOCATION:TransInterQueer e.V.\, Berlin
+DTSTART:20261205T230059Z
+SUMMARY:Kleidertauschparty
+UID:3265ede151f56e10d4aa8be9af5d4c0a@triq-calendar.github.io
+END:VEVENT
+BEGIN:VEVENT
 DESCRIPTION:Die TrIQ-Bibliothek lädt zum Stöbern\, Lesen und Ausleihen ein.\nMehr Infos hier:\nhttps://www.transinterqueer.org/angebote/triq-bibliothek/\n\nSource: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
