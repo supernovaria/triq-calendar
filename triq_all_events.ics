@@ -94,7 +94,7 @@ BEGIN:VEVENT
 DESCRIPTION:Source: https://www.transinterqueer.org/en/offers-and-projects/events-2/\n\nInstagram (for last-minute changes): https://www.instagram.com/transinterqueer/
 DURATION:PT2H
 LOCATION:TransInterQueer e.V.\, Berlin
-DTSTART:20261205T230059Z
+DTSTART:20261206T120000Z
 SUMMARY:Kleidertauschparty
 UID:3265ede151f56e10d4aa8be9af5d4c0a@triq-calendar.github.io
 END:VEVENT
